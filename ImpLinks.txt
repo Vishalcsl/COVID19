@@ -1,0 +1,27 @@
+{
+                    "type": "Polygon",
+                    "properties": {
+                        "name": null
+                    },
+                    "id": "-99",
+                    "arcs": [
+                        [
+                            0
+                        ]
+                    ]
+                },
+
+
+https://covid-india-cases.herokuapp.com/states
+
+//HelpLines
+
+https://documenter.getpostman.com/view/9215231/Szf25qKt?version=latest
+
+//Infection Alert System
+https://documenter.getpostman.com/view/4282443/SzfAymFD?version=latest
+
+
+//Loaders 
+
+https://medium.com/@ericschwartz7/loaders-in-react-js-3e74d1b546

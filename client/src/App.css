@@ -1,0 +1,233 @@
+.App {
+  text-align: center;
+}
+
+.worldMapWrapper{
+  margin-left: 5vw;
+  width: 90vw;
+  height: 70vh;
+  border: 1px solid green; 
+}
+
+svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+svg .country{
+  stroke:  black;
+  stroke-width: 0.5px;
+}
+svg .country:hover {
+  stroke: black;
+  stroke-width: 1px;
+  cursor: pointer;
+}
+
+.selected{
+  fill: yellow;
+}
+
+.tooltip {	
+  position: absolute;			
+  text-align: center;			
+  width: auto;					
+  height: auto;					
+  padding: 5px;				
+  font: 16px sans-serif;		
+  background: lightgreen;	
+  border: 0px;		
+  border-radius: 8px;			
+  pointer-events: none;			
+}
+
+.worldStats{
+  width: 80%;
+  height: auto;
+  border: 2px solid gray;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-bottom: 3%;
+  align-self: center;
+  text-align: center;
+}
+
+
+.worldData, .indiaData, .worldNews, .indiaNews {
+    border: 1px solid #eeccee;
+    max-height: 500px;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+a:link{
+ color:hotpink;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+.tableHead {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.guidelines, .news{
+  background-color: ghostwhite;
+  width: 80%;
+  height: auto;
+  border: 2px solid gray;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-bottom: 3%;
+  align-self: center;
+  text-align: center;
+}
+
+
+#flash, #flashAgain{
+  width: 30%;
+  margin-left: 35%;
+}
+
+.trans{
+  background: transparent;
+  width: 40vw;
+  height: 40vh;
+  border: 1px solid green
+}
+
+
+
+.full-width-height {
+  height: 90vh;
+  width: 50%;
+}
+
+.map-container-left {
+  width: calc(50% - 16px);
+  height: calc(90vh - 16px);
+  padding: 8px;
+}
+
+.map-container-right {
+  width: calc(50% - 16px);
+  height: calc(90vh - 16px);
+  padding: 8px;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.fill {
+  flex: 1;
+}
+
+.center {
+  text-align: center;
+}
+
+.mt16 {
+  margin-top: 16px;
+}
+
+.sideData{
+  margin-left: 10%;
+  width: 90%;
+  height: 33%;
+}
+
+.infosec{
+  border: 1px solid palevioletred;
+  width: 100%;
+  height: 50%;
+}
+
+.state-info{
+  width: 33%;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  font-size: large;
+  font-weight: 500;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.main-info{
+  width: 96%;
+  height: 90%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.col-info{
+  height: 100%;
+}
+
+.singleInfoBlock{
+  text-align: center;
+  line-height: 3rem;
+  font-size: large;
+  font-weight: 700;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 90%;
+  height: 20%;
+  margin-top: 4%;
+  padding: 5px 5px;
+  border: 0.5px dashed deeppink;
+  border-radius: 5px;
+}
+
+.graphBlock{
+  width: 96%;
+  height: 50%;
+  margin: auto;
+  border: 0.5px dashed deeppink;
+}
+
+#country-name{
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'Courier New', Courier, monospace
+}
+
+
+.surveyMainContainer{
+  margin-left: 2vw;
+  width: 96vw;
+  height: 90vh;
+  color: #26a3f0;
+  font-stretch: expanded;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.3rem;
+}
+
+.resultDisplay{
+  margin-top: 4vh;
+  width: 50vw ;
+  height: 70vh;
+  margin-left: 25vw;
+}
+
+.successResult{
+  width: 100%;
+  height: 20%;
+}
+
+.errorResult{
+  width: 100%;
+  height: 50%;
+}
+
+
