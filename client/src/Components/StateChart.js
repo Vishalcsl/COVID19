@@ -132,6 +132,9 @@ class StateChart extends React.Component {
             return (
                 <div style={{ width: "100%", height: "100%" }}>
                     <div className="row sideData">
+                        {this.props.name}
+                    </div>
+                    <div className="row sideData">
                         <canvas id="line" width="100%" height="100%"></canvas>
                     </div>
                     <div className="row sideData">
@@ -140,17 +143,35 @@ class StateChart extends React.Component {
                     <div className="container sideData" style={{ border: "1px solid black" }}>
                         {this.state.dataCheck && this.state.currentStateData !== undefined && (
                             <div className="row infosec" >
-                                <div className="col-4 card state-info shadow">{this.state.currentStateData.noOfCases}</div>
-                                <div className="col-4card state-info shadow">{this.state.currentStateData.cured}</div>
-                                <div className="col-4 card state-info shadow">{this.state.currentStateData.deaths}</div>
+                                <div className="col-4 card state-info shadow">
+                                    <p className="infoText">Total Cases</p>
+                                    {this.state.currentStateData.noOfCases}
+                                </div>
+                                <div className="col-4card state-info shadow">
+                                    <p className="infoText">Total Recovery</p>
+                                    {this.state.currentStateData.cured}
+                                </div>
+                                <div className="col-4 card state-info shadow">
+                                    <p className="infoText">Total Deaths</p>
+                                    {this.state.currentStateData.deaths}
+                                </div>
                             </div>
                         )}
 
                         {this.state.dataCheck && this.state.currentStateData !== undefined && (
                             <div className="row infosec">
-                                <div className="col-4 card state-info shadow">{this.state.currentStateData.noOfCases - this.state.currentStateData.cured - this.state.currentStateData.deaths}</div>
-                                <div className="col-4 card state-info shadow">{(this.state.currentStateData.deaths / this.state.currentStateData.cured).toPrecision(3)}</div>
-                                <div className="col-4 card state-info shadow">{(this.state.currentStateData.cured / this.state.currentStateData.noOfCases).toPrecision(3)}</div>
+                                <div className="col-4 card state-info shadow">
+                                    <p className="infoText">Total Active Cases</p>
+                                    {this.state.currentStateData.noOfCases - this.state.currentStateData.cured - this.state.currentStateData.deaths}
+                                </div>
+                                <div className="col-4 card state-info shadow">
+                                    <p className="infoText">Death Rate</p>
+                                    {(this.state.currentStateData.deaths / this.state.currentStateData.noOfCases).toPrecision(3)}
+                                </div>
+                                <div className="col-4 card state-info shadow">
+                                    <p className="infoText">Recovery Rate Rate</p>
+                                    {(this.state.currentStateData.cured / this.state.currentStateData.noOfCases).toPrecision(3)}
+                                </div>
                             </div>
                         )}
 
