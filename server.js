@@ -24,7 +24,7 @@ app.get('*', (req, res) => {
 const db = require("./app/models");
 const password = 'devarsh@mongo';
 const databaseUrl = `mongodb+srv://devarsh:${password}@cluster0.akfpy.mongodb.net/covidTracker?retryWrites=true&w=majority`;
-db.mongoose.connect(databaseUrl || `mongodb://localhost:27017/covidTracker`, {
+db.mongoose.connect(process.env.MONGODB_URI || databaseUrl, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
