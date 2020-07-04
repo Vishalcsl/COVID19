@@ -1,5 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const path = require('path');
 const cors = require("cors");
 
 
@@ -15,16 +16,18 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // static files
-app.use(express.static('./client/build'));
+app.use(express.static('client/build'));
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, './client/build/index.html'));
+    //console.log(path.join(__dirname, './client/build/index.html'));
+    res.sendFile(path.join(__dirname, '/client/build/index.html'));
 });
 
 //database connection
 const db = require("./app/models");
 const password = 'devarsh@mongo';
-const databaseUrl = `mongodb+srv://devarsh:${password}@cluster0.akfpy.mongodb.net/covidTracker?retryWrites=true&w=majority`;
-db.mongoose.connect(process.env.MONGODB_URI || databaseUrl, {
+const databaseUrl = `mongodb+srv://devarsh:${password}@cluster0.akfpy.mongodb.net/covid?retryWrites=true&w=majority`;
+console.log(databaseUrl);
+db.mongoose.connect(databaseUrl, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
