@@ -27,7 +27,7 @@ const db = require("./app/models");
 const password = 'devarsh@mongo';
 const databaseUrl = `mongodb+srv://devarsh:${password}@cluster0.akfpy.mongodb.net/covid?retryWrites=true&w=majority`;
 console.log(databaseUrl);
-db.mongoose.connect(databaseUrl, {
+db.mongoose.connect(databaseUrl || process.env.MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
