@@ -9,4 +9,4 @@
 - Chart Support (In case one wants to consult a doctor)
 - Survey to collect user data
 
-### The site can be found here --> *[COVID19 SITE]*(https://stunning-arches-72108.herokuapp.com/).
+### The site can be found here --> *[COVID19 SITE](https://stunning-arches-72108.herokuapp.com/)*.
