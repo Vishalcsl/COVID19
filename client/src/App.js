@@ -6,6 +6,7 @@ import Home from './Components/Home';
 import IndiaMap from './Components/IndiaMap';
 import CountryInfo from './Components/CountryInfo';
 import Survey from './Components/Survey';
+import Helpline from './Components/Helpline';
 
 class App extends React.Component {
   render() {
@@ -23,6 +24,9 @@ class App extends React.Component {
                 <li className="nav-item">
                   <a className="nav-link" href="/india">India Detailed Info</a>
                 </li>
+                <li>
+                  <a className="nav-link" href="/helpline-India">Helpline</a>
+                </li>
               </ul>
               <span className="navbar-text">
                 <a href="/survey">Take the Survey</a>
@@ -36,6 +40,7 @@ class App extends React.Component {
               <Route exact path="/india" component={IndiaMap} />
               <Route exact path="/info/:code/:countryName" component={CountryInfo} />
               <Route exact path="/survey" component={Survey} />
+              <Route exact path="/helpline-India" component={Helpline} />
             </Switch>
           </div>
         </div>

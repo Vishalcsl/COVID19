@@ -131,8 +131,8 @@ class StateChart extends React.Component {
         if (this.state.timeline === true && this.state.dataCheck === true) {
             return (
                 <div style={{ width: "100%", height: "100%" }}>
-                    <div className="row sideData">
-                        {this.props.name}
+                    <div className="row">
+                        <p style={{ marginLeft: '40%' }}>{this.props.name}</p>
                     </div>
                     <div className="row sideData">
                         <canvas id="line" width="100%" height="100%"></canvas>
